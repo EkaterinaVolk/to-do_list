@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ToDo List</title>
+  </head>
+  <body>
+    <div class="toDo" id="toDo">
+      <h1 class="toDo__header">*ToDo List*</h1>
+      <input
+        type="text"
+        class="toDo__input"
+        id="toDo__input"
+        placeholder="task"
+      />
+      <button class="toDo__button" id="toDo__button">Add task</button>
+      <ul id="toDo__ul"></ul>
+      <h4 id="message" class="message">Task list is empty</h4>
+      <button class="toDo__button" id="toDo__button-clear" disabled>
+        Clear
+      </button>
+
+      <div id="like_button_container"></div>
+    </div>
+    <script src="script.js"></script>
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="like_button.js"></script>
+  </body>
+</html>

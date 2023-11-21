@@ -1,0 +1,67 @@
+body {
+  background-color: #eee;
+}
+
+.toDo {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 30px;
+  max-width: 500px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.toDo__header {
+  align-self: center;
+  max-width: fit-content;
+  padding: 5px;
+  color: rgb(44, 44, 44);
+  border-bottom: solid rgba(84, 84, 244, 0.441) 2px;
+}
+
+.toDo__input {
+  align-self: center;
+  max-width: fit-content;
+  min-width: 200px;
+}
+
+.toDo__button {
+  align-self: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+  text-transform: uppercase;
+  color: rgb(44, 44, 44);
+  background-color: rgba(84, 84, 244, 0.441);
+}
+
+.toDo__button:disabled {
+  background-color: rgba(53, 53, 82, 0.279);
+}
+
+.toDo__ul {
+  align-self: flex-start;
+}
+
+li {
+  margin-left: 50px;
+  padding: 10px;
+  list-style-type: none;
+  font-size: larger;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.message {
+  text-align: center;
+  color: rgba(44, 44, 44, 0.523);
+  text-transform: uppercase;
+}
